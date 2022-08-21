@@ -1,0 +1,174 @@
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(226, 243, 248);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    border-radius:15px;
+    background-color: hsl(225, 100%, 98%);
+    margin: auto;
+    display: grid;
+    grid-template: auto auto auto auto auto auto  /100px 200px 100px;
+}
+
+.card-img{
+    border-radius: 10px 10px 0 0;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    width: 100%;
+
+}
+
+.card-title{
+    font-size: 1.6rem;
+    grid-row: 2;
+    grid-column: 1/4;
+    text-align: center;
+    margin: 2em 0 1em 0;
+}
+
+.card-body{
+    grid-row: 3;
+    grid-column: 1/4;
+    justify-self: center;
+    max-width: 75%;
+    text-align: center;
+    font-weight: 500;
+    opacity: 70%;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 1em;
+
+}
+
+.card-plan{
+    background-color: hsl(223, 19%, 93%);
+    width: 75%;
+    border-radius: 10px;
+    padding: 1.5em;
+    justify-self: center;
+    grid-row: 4;
+    grid-column: 1/4;
+    display: grid;
+    grid-template: auto auto/ auto auto;
+}
+
+.card-music-icon{
+    grid-row:4/6;
+    grid-column: 1/2;
+}
+
+.card-plan-lenght{
+    grid-row: 4;
+    grid-column: 2;
+    font-weight: 700;
+}
+
+.card-plan-price{
+    grid-row: 5;
+    grid-column: 2;
+    opacity: 70%;
+    font-weight: 500;
+}
+
+.card-link{
+    grid-row: 4/6;
+    grid-column: 3;
+    justify-self: end;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: .875rem;
+    padding: .5em;
+}
+
+.card-link:hover,
+.card-link:focus    {
+    cursor: pointer;
+    background-color: #1D27CD;
+    color: #fff;
+    border: none;
+}
+
+.card-music-icon,
+.card-link,
+.card-plan-lenght,
+.card-plan-price{
+    margin:0;
+    align-self: center;
+}
+
+.card-cancel-order,
+.card-payment-btn{
+    justify-self: center;
+    padding: 1em 2em;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.card-payment-btn{
+    width: 80%;
+    grid-row: 6;
+    grid-column: 1/4;
+    margin-top: 2.5em;
+    border: none;
+    background-color: #1D27CD;
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.card-cancel-order{
+    grid-row: 7;
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 70%;
+    width: fit-content;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+
+@media (max-width:600px) {
+    body{
+        max-width: 100vh;
+        font-size: .875rem;
+        background-image: url("images/pattern-background-mobile.svg");
+    }
+    main{
+        grid-template: auto auto auto auto auto auto  /100px 100px 100px;
+    }
+
+    .card-title{
+        margin: 1em 0 .5em 0;
+    }
+
+    .card-plan{
+        box-sizing: border-box;
+        width:90%;
+    }
+
+    .card-music-icon{
+        margin-right: 1em;
+    }
+
+    .card-link{
+        font-size: .875rem;
+        padding: 0;
+        margin-left: 1em;
+    }
+
+    .card-payment-btn,
+    .card-cancel-order{
+        font-size: .875rem;
+    }
+}
