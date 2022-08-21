@@ -10,6 +10,7 @@ body{
 }
 
 main{
+    box-sizing: border-box;
     border-radius:15px;
     background-color: hsl(225, 100%, 98%);
     margin: auto;
