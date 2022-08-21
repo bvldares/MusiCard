@@ -2,6 +2,7 @@ body{
     font-family: 'Red Hat Display', sans-serif;
     margin: 0;
     display: flex;
+    height: 100vh;
     max-height: 100vh;
     background-color: rgb(226, 243, 248);
     background-image: url("images/pattern-background-desktop.svg");
@@ -10,10 +11,10 @@ body{
 }
 
 main{
+    margin: auto;
     box-sizing: border-box;
     border-radius:15px;
     background-color: hsl(225, 100%, 98%);
-    margin: auto;
     display: grid;
     grid-template: auto auto auto auto auto auto  /100px 200px 100px;
 }
